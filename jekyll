@@ -1,0 +1,66 @@
+#/bin/sh
+
+PID_FILE=.jekyll # The pid file
+LOG_FILE=jekyll.log # The log file
+
+usage() {
+	echo "Usage: ./jekyll start|stop|status|restart"
+}
+
+startJekyll() {
+	if [[ -f ${PID_FILE} ]]
+	then
+		errput "Jekyll is already started...."
+	else
+		output "Jekyll is starting..."
+		jekyll serve -B 2>&1 1>> ${LOG_FILE} & echo $! > $PID_FILE
+		output "Started"
+	fi
+}
+
+stopJekyll() {
+	output "Stopping Jekyll..."
+	pkill -lf jekyll
+	rm -f ${PID_FILE}
+	output "Stopped"
+}
+
+output() {
+	echo "LOG: $1"
+}
+
+errput() {
+	echo "ERROR: $1"
+}
+
+case $1 in
+
+start)
+	startJekyll
+	;;
+stop)
+	stopJekyll
+	;;
+restart)
+	stopJekyll
+	startJekyll
+	;;
+status)
+	if [[ -f ${PID_FILE} ]]
+	then
+		PID=`cat ${PID_FILE}`
+		if ps -p ${PID} > /dev/null
+		then
+			output "Jekyll is running"
+		else
+			output "Jekyll is not started"
+		fi
+	else
+		output "Jekyll is not started"
+	fi
+	;;
+*)
+	usage
+	;;
+
+esac

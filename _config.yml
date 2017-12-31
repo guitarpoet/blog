@@ -32,6 +32,13 @@ plugins:
   - jekyll-feed
   - jekyll-assets
 
+nav_lists:
+  - titles:
+      en: About
+      zh: 关于
+      zh-Hans: 关于
+      zh-Hant: 關於
+    url: /about
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

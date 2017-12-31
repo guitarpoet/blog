@@ -26,12 +26,11 @@ github_username:  guitarpoet
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-text-theme
 permalink: pretty
 plugins:
   - jekyll-feed
   - jekyll-assets
-  - jekyll-minifier
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

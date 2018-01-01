@@ -1,11 +1,14 @@
 ---
+
 layout: post
-title:  "关于JavaScript的动态加载 —— 1、在服务器端，我们能做到什么"
+title:  "关于JavaScript的动态加载「一」"
 date:   2017-12-21 19:38:50 +0800
 categories: JavaScript Essay
+tags: JavaScript HotLoad
+
 ---
 
-# 关于JavaScript的动态加载 —— 1、在服务器端，我们能做到什么
+# 关于JavaScript的动态加载「一」在服务器端，我们能做到什么
 
 ## 1、说在前面
 
@@ -118,7 +121,6 @@ setInterval(() => hello(world()), 1000);
 
 随便举一个使用EJB的代码的例子：
 
-
 {% highlight java %}
 // Let's construct the context first
 Context ctx = new InitialContext();
@@ -139,7 +141,6 @@ new Thread(() -> {
 	}
 }).start();
 {% endhighlight %}
-
 
 同样的代码。这里面的Hello是一个EJB，它是怎么得到的就太复杂先不说了，说结果。当Hello这个EJB发生了改变的时候（就是重新布署了之后）。
 

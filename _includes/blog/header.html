@@ -37,7 +37,7 @@
       {%- if site.paths.all -%}
         {%- assign __path = site.paths.all -%}
       {%- else -%}
-        {%- assign __path = '/all.html' -%}
+        {%- assign __path = '/all' -%}
       {%- endif -%}
       {%- include snippets/prepend-baseurl.html -%}
       {%- assign href = __return -%}

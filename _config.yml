@@ -32,7 +32,22 @@ plugins:
   - jekyll-feed
   - jekyll-assets
 
+repository: guitarpoet/guitarpoet.github.io
+site.repository_tree: ""
+
 nav_lists:
+  - titles:
+      en: Essays
+      zh: 文章
+      zh-Hans: 文章
+      zh-Hant: 文章
+    url: /all/?tag=Essay
+  - titles:
+      en: Poems
+      zh: 诗歌
+      zh-Hans: 诗歌
+      zh-Hant: 詩歌
+    url: /all/?tag=Poem
   - titles:
       en: About
       zh: 关于

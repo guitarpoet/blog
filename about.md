@@ -9,11 +9,14 @@ permalink: /about/
 
 使用的工具是官方的[jekyllrb.com](https://jekyllrb.com/)，主题是基于[jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme)的，并且使用了著名的Ethan的[Han](https://github.com/ethantw/Han)做中文排版优化。
 
+本站的配色主要是使用了[Solarized](http://ethanschoonover.com/solarized)，但是因为我很懒，所以并不是所有的配色都完全使用它。哈哈。
+
 对于本站，我推荐使用的字体是Adobe的Source（思源家族），主要是下面几款：
 
 1. 西文无衬线：Source Sans Pro
 2. 西文衬线： Source Serif Pro
 3. 中文无衬线：Noto Sans CJK（基于思源黑）
 4. 中文衬线：Source Serif CN（思源宋）
+5. 西文等宽：Source Code Pro
 
 这是我的[github](https://github.com/guitarpoet)，不过更新也不是很频繁。。。。

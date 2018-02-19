@@ -4,7 +4,7 @@ layout: post
 title:  "关于JavaScript的动态加载「一」"
 date:   2017-12-21 19:38:50 +0800
 categories: JavaScript Essay
-tags: JavaScript HotLoad
+tags: JavaScript HotLoad Essay Technology
 
 ---
 

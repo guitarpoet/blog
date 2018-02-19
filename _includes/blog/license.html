@@ -16,9 +16,12 @@
     <p>{{ __return | replace: "[LICENSE]", '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>' }}</p>
     {%- assign __path = '/assets/images/license-cc4.png' -%}
     {%- include snippets/prepend-baseurl.html -%}
-    <a class="license" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
-      <img alt="Creative Commons License" src="{{ __return }}" />
-    </a>
+    <div>
+        Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, and all the text in this blog are licensed by
+        <a class="license" rel="license" href="http://creativecommons.org/licenses/by/4.0/" title="Creative Commons BY 4.0" target="_blank">
+            <img alt="Creative Commons License" src="{{ __return }}" />
+        </a>
+    </div>
     {%- assign __locale = locale.LICENSE_INTRO -%}
     {%- include snippets/locale-to-string.html -%}
     <p>{{ __return }}</p>

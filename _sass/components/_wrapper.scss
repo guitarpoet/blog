@@ -27,3 +27,13 @@
     }
   }
 }
+
+
+@include media-query($on-palm) {
+    nav {
+        ul.inline-list {
+            padding-left: 0px;
+            padding-top: 0.5rem;
+        }
+    }
+}

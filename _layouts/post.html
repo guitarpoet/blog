@@ -28,10 +28,8 @@ layout: blog-default
 					<div class="article-license">
 						{%- include blog/license.html -%}
 					</div>
+                    <div id="gitalk-container"></div>
 				</footer>
-				{%- if page.comment != false -%}
-						<section>{%- include utils/comment-disqus.html -%}</section>
-				{%- endif -%}
 			</article>
 		</div>
 		<div class="col-2">
